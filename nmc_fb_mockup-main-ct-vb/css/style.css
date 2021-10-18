@@ -5,7 +5,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAXNSR0IArs
     /*background-image: linear-gradient(140deg, #231f4c 0%, #1c11f2 50%, #86234b 75%);*/
    /* background-color: #75c592;*/
    /* background-image: linear-gradient(140deg, #75c592 0%, #b4dbb1 50%, #b5dcb0 75%);*/
-    background-image: linear-gradient(140deg, #000 0%, #231e4c 18%, #060225 50%, #4436bb 90%, #000 100%);
+    /*background-image: linear-gradient(140deg, #000 0%, #231e4c 18%, #060225 50%, #4436bb 90%, #000 100%);*/
     font-family: 'Teko', sans-serif;
     font-size: 1.25rem;
 }
@@ -14,12 +14,12 @@ h1 {
   color: #bd1f4d;
   font-size: 4rem;
   font-family: 'Teko', sans-serif;
-    text-transform: uppercase;
-    line-height: .5rem;
+  text-transform: uppercase;
+  line-height: .5rem;
 }
 
 h2 {
-  color: white;
+  color: black;
   font-size: xx-large;
   font-family: 'Teko', sans-serif;
     text-transform: uppercase;
@@ -38,14 +38,21 @@ h3 {
 h4 {
   font-size: large;
   text-transform: uppercase;
-    font-size: 3rem;
-    color: #bd1f4d;
+  font-size: 3rem;
+  color: #bd1f4d;
+}
+
+h5 {
+  font-size: medium;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: gray;
 }
 
 p {
   line-height: 150%;
   text-align: justify;
-  color: white;
+  color: black;
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -66,7 +73,7 @@ header {
   left: 87.5%;
   text-align: right;
   width: fit-content;
-  background-color: white;
+  background-color: black;
   z-index: 1;
 }
 
@@ -85,7 +92,7 @@ header {
 }
 
 .topnav a {
-  color: white;
+  color: black;
   padding-left: 30px;
 }
 
@@ -165,6 +172,10 @@ section {
     transform: scale(1.04); 
 }
 
+.partner-logo img{
+  height: 100px;
+  width: auto;
+}
 
 
 .footnav {
