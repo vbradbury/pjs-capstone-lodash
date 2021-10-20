@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="randomHue()">
   <header>
     <nav class="topnav">
       <div class="navfloat1">
@@ -40,15 +40,15 @@
     </nav>
   </header>
   <div class="back-button">
-    <a href="#title">Back To The Top</a>
+    <a href="#title">&#9651;</a>
   </div>
   <main>
     <section id="title">
       <div id="sphere-logo">
         <img src="img/FB_CircleLogo_Animated_01_WithText_MediumFrameRate.gif">
+          <h2><i>2022 New Media Caucus Symposium</i></h2>
       </div>
-      <!--<h1>Future Bodies</h1>-->
-      <h2><i>2022 New Media Caucus Symposium</i></h2>
+      
     </section>
     <section id="about">
       <h4>About</h4>
@@ -122,75 +122,98 @@
     <section id="partners">
       <h4>Partners</h4>
       <p>
-        <i><b>Could someone fix the CSS so that these logos are side-by-side?  In two rows, if necessary.</i></b>
+        <div id="partner-logo-container">
+            <div class="partner-logo">
+              <img src="img/VT-ICAT-Logo.png" />
+            </div>
 
-        <div class="partner-logo">
-          <img src="img/VT-ICAT-Logo.png" />
-        </div>
+            <div class="partner-logo">
+              <img src="img/VT-SOVA-Logo.png" />
+            </div>
 
-        <div class="partner-logo">
-          <img src="img/VT-SOVA-Logo.png" />
-        </div>
+            <div class="partner-logo">
+              <img src="img/VT-MAC-Logo.png" />
+            </div>
 
-        <div class="partner-logo">
-          <img src="img/VT-MAC-Logo.png" />
-        </div>
+            <div class="partner-logo">
+              <img src="img/VT-CAUS-Logo.png" />
+            </div>
 
-        <div class="partner-logo">
-          <img src="img/VT-CAUS-Logo.png" />
-        </div>
-
-        <div class="partner-logo">
-          <img src="img/University-of-Vermont-Logo.png" />
-        </div>
+            <div class="partner-logo">
+              <img src="img/University-of-Vermont-Logo.png" />
+            </div>
+        </div><!--end partner-logo-container-->
 
       </p>
     </section>
     <section id="travel">
       <h4>Travel and Lodging</h4>
       <h3>Getting to Virgina Tech</h3>
-      <p>
-        <i><b>Zach created the H5 tag and put in some CSS, but the gap between the H4s and the H5s is too big, as it the gap between the H5 and the text below it.  Can we fix that?</i></b>
-      </p>
-      <h5>Plane</h5> 
-      <p>
-        <a href="www.roanokeregionalairport.com"> Roanoke Regional Airport </a> is the closest airport to Blacksburg. It is approximately a 40 minute drive from the airport to Blacksburg.
-      </p>
-      <h5>Bus from airport to Blacksburg</h5>
-      <p>
-        The <a href="https://smartwaybus.com/">Smart Way</a> bus travels from the Roanoke Regional Airport to the Virginia Tech campus in Blacksburg. The <a href="https://smartwaybus.com/fares.html">fare</a> is $4.00 each way, payable in cash (the drivers do not carry change) at the time of boarding the bus.
-      </p>
-      <h5>Blacksburg Transit</h5>
-      <p>
-        While Blacksburg is a small town, there is a municipal bus system, <a href="https://ridebt.org/">Blacksburg Transit</a>.
-      </p>
 
-      <h3>Lodging</h3>
-      <p>
-        We have reserved blocks of rooms at the hotels listed below.<br /><br />
-        When making your reservations, please reference you are part of the guest block for XYZ.<br /><br />
-      </p>
-      <h5><a href="https://www.innatvirginiatech.com/blacksburg_hotel_accommodations/guest_rooms/">The Inn at Virginia Tech</a></h5>
-      <p>        
-        20 minute walk or 5 minute drive<br />
-        Room Rate?<br />
-      </p>
-      <h5><a href="https://hotelblacksburg.com/">Main Street Inn</a></h5>
-      <p>        
-        5 minute walk or 2 minute drive<br />
-        Room Rate?<br />
-      </p>
-      <h5><a href="https://www.marriott.com/hotels/travel/roarb-residence-inn-blacksburg-university/">Residence Inn</a></h5>
-      <p>        
-        15 minute walk or 5 minute drive<br />
-        Room Rate?<br />
-      </p>
+    <div id="travel-content">
+      <div class="travel-mode">
+          <img src="img/plane.svg">
+           <h3>By Air</h3> 
+          
 
-      <h3>Parking</h3>
+          <!--<h1>✈</h1>-->
+          <p>
+            <a href="www.roanokeregionalairport.com"> Roanoke Regional Airport </a> is the closest airport to Blacksburg. It is approximately a 40 minute drive from the airport to Blacksburg.
+          </p>
+      </div>
+       <div class="travel-mode">  
+            <img src="img/bus.svg">
+          <h3>Bus to Blacksburg from ROA Airport</h3>
+           
+          <p>
+            The <a href="https://smartwaybus.com/">Smart Way</a> bus travels from the Roanoke Regional Airport to the Virginia Tech campus in Blacksburg. The <a href="https://smartwaybus.com/fares.html">fare</a> is $4.00 each way, payable in cash (the drivers do not carry change) at the time of boarding the bus.
+          </p>
+      </div>
+      <div class="travel-mode">
+           <span class="smaller"><img src="img/BT.svg"></span>
+          <h3>Blacksburg Transit</h3>
+         
+          <p>
+            While Blacksburg is a small town, there is a municipal bus system, <a href="https://ridebt.org/">Blacksburg Transit</a>.
+          </p>
+       </div>
+        </div>
+      <h3>Blacksburg Area Hotels</h3>
+      <p>
+        We have reserved blocks of rooms at the hotels listed below.
+        When making your reservations, please reference you are part of the guest block for XYZ.
+      </p>
+        <div id="travel-content">
+        <div class="travel-mode">
+            <span class="smaller"><img src="img/hotel.svg"></span>
+          <h3><a href="https://www.innatvirginiatech.com/blacksburg_hotel_accommodations/guest_rooms/">The Inn at Virginia Tech</a></h3>
+          <p>        
+            20 minute walk or 5 minute drive<br />
+            Room Rate?<br />
+          </p>
+        </div>
+        <div class="travel-mode">
+            <span class="smaller"><img src="img/hotel.svg"></span>
+          <h3><a href="https://hotelblacksburg.com/">Main Street Inn</a></h3>
+          <p>        
+            5 minute walk or 2 minute drive<br />
+            Room Rate?<br />
+          </p>
+        </div>
+        <div class="travel-mode">
+            <span class="smaller"><img src="img/hotel.svg"></span>
+          <h3><a href="https://www.marriott.com/hotels/travel/roarb-residence-inn-blacksburg-university/">Residence Inn</a></h3>
+          <p>        
+            15 minute walk or 5 minute drive<br />
+            Room Rate?<br />
+          </p>
+        </div>
+        </div>
+      <h3>Parking for the Symposium</h3>
       <p>
         The most convenient parking location for symposium events is the North End Center Parking Garage. Visitors may park on levels 1 and 2 for a daily charge paid at the garage. See the map below.
       </p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6353.589173628795!2d-80.42809232056975!3d37.228850962032176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884d95721995a025%3A0x410e0661085c4953!2sNorth%20End%20Parking%20Garage!5e0!3m2!1sen!2sus!4v1634238495493!5m2!1sen!2sus" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6353.589173628795!2d-80.42809232056975!3d37.228850962032176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884d95721995a025%3A0x410e0661085c4953!2sNorth%20End%20Parking%20Garage!5e0!3m2!1sen!2sus!4v1634238495493!5m2!1sen!2sus" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <p>
         For additional options on campus, please see the <a href="https://parking.vt.edu/parking/visitors.html">Virginia Tech parking information</a> for contactless visitor parking through ParkMobile.<br /><br />
         For additional parking options in the town of Blacksburg, please see this guide to <a href="https://www.downtownblacksburg.com/assets/uploads/Downtown_Blacksburg_Parking.pdf">downtown Blacksburg parking.</a>
@@ -217,6 +240,33 @@
       </p>
     </div>
   </footer>
+    
+    <script>
+        
+   let degreeVal = Math.floor(Math.random() * 360);   
+        
+    function randomHue(){
+        document.getElementById("sphere-logo").style.filter = "hue-rotate(" + degreeVal + "deg)";
+        
+       var links = document.getElementsByTagName("a");
+        
+        var titles4 = document.getElementsByTagName("h4");
+       
+        var i;
+        for (i = 0; i < links.length; i++) {
+            links[i].style.filter = "hue-rotate(" + degreeVal + "deg)";
+        }
+        var j;
+        for (j = 0; j < titles4.length; j++) {
+            titles4[j].style.filter = "hue-rotate(" + degreeVal + "deg)";
+        }
+        
+        
+    }
+        
+       
+    
+    </script>
 </body>
 
 </html>
