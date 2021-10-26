@@ -49,6 +49,14 @@ p {
 
 }
 
+li {
+  line-height: 150%;
+  text-align: justify;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+
+}
+
 a {
   color: dimgrey;
   filter: hue-rotate(0);
