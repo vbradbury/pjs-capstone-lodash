@@ -66,6 +66,7 @@ header {
   left: 87.5%;
   text-align: right;
   width: fit-content;
+  width: -moz-fit-content;
   background-color: white;
   padding: 5px;
   border: 2px solid #ccc;
